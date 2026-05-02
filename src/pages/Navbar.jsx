@@ -16,7 +16,7 @@ export default function Navbar() {
         <ul className="flex gap-6 font-semibold">
           {navItems.map((item) => (
             <li key={item}>
-              <a href="#" className="px-5 py-1 rounded-2xl hover:bg-[#103936] hover:text-gray-50 hover:border hover:border:white/20 transition">{item}</a>
+              <a href="#" className="px-5 py-1 rounded-2xl hover:bg-[#103936] hover:text-gray-50 transition">{item}</a>
             </li>
           ))}
         </ul>
