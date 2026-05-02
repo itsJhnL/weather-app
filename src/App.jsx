@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./pages/Navbar";
-import Footer from "./pages/Footer";
+import Navbar from "./components/layouts/Navbar";
+import Footer from "./components/layouts/Footer";
 import Home from "./pages/Home";
 import backgroundImage from "../src/assets/images/background.jpg";
 

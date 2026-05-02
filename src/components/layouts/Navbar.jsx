@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "../assets/logo/logo.png";
-import Burger from "../assets/icons/burger.png";
-import Search from "../assets/icons/search.png";
+import Logo from "../../assets/logo/logo.png";
+import Burger from "../../assets/icons/burger.png";
+import Search from "../../assets/icons/search.png";
 
 const navItems = ["Home", "Forecast", "Map", "Alerts", "News"];
 
