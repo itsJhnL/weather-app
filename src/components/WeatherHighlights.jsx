@@ -3,9 +3,15 @@ import { useWeather } from "../hooks/useWeather";
 
 export default function WeatherHighlights({ weather }) {
   if (!weather) return null;
-  const sunrise = new Date(weather.sys.sunrise * 1000).toLocaleTimeString();
-  const card = "border border-white/10 bg-white/10 backdrop-blur-4xl rounded-2xl m-1";
-  
+
+  const getLocalTime = (timestamp, timezone) => {
+    const date = new Date((timestamp + timezone) * 1000); 
+    return date.toUTCString().slice(17, 22); // HH:MM
+  };
+  const sunrise = getLocalTime(weather.sys.sunrise, weather.timezone);
+  const card =
+    "border border-white/10 bg-white/10 backdrop-blur-4xl rounded-2xl m-1";
+
   return (
     <div>
       <div className="border border-white/20 rounded-2xl px-4 backdrop-blur-xs text-white">
